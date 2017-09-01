@@ -42,7 +42,8 @@ public class Collision {
      * @return true se há colisão ou false, do contrário.
      */
     public static final boolean rectsOverlap(Rectangle r1, Rectangle r2) {
-        
+        if(((r1.x>r2.x) && (r1.x<(r2.x+r2.width)))&&((r1.y>r2.y) && (r1.y<(r2.y+r2.height)))) 
+            return true;
         return false;
     }
 
